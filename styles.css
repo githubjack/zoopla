@@ -1,0 +1,174 @@
+/*#*/
+
+body{
+    background: #dddddd;
+    color:#222222;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.clear{
+    clear:both;
+}
+.container{
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 640px;
+}
+.container .row{
+    float:left;
+    margin: 0 1%;
+    width:100%;
+}
+
+.container .row .col-1,
+.container .row .col-2
+.container .row .col-3 {
+    float:left;
+    width:100%;
+}
+/*--------------------------------------------------------
+Menu section
+--------------------------------------------------------*/
+nav{
+    background: purple;
+}
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+nav ul li {
+	display:inline-block;
+	background-color: purple;
+	}
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+nav a:hover { 
+	background-color: #000000; 
+}
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px;
+}
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/*---------------------------------
+the nav ul ul ul li is for another tier 
+drop down 3 levels deep just position 
+the left position the distance of the 
+width: in this case 170px
+------------------------------------
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+-----------------------------------*/
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+/*-------------------------------------------
+header section
+-------------------------------------------*/
+.container .row .col-1 header h1{
+    display:none;
+}
+.container .row .col-1 header figure{
+    margin:0;
+    padding:0;
+}
+.container .row .col-1 header figure img{
+    width:100%;
+}
+/*---------------------------------------
+content section
+---------------------------------------*/
+.container .row .col-3 {
+    border:6px solid purple;
+    background: #f2f2f2;
+    margin:10px 0;
+}
+.container .row .col-3 article,
+.container .row .col-3 section{
+    padding: 5% 5% 0% 5%;
+}
+
+.container .row .col-2 h2,
+.container .row .col-3 h2{
+    font-style: normal;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.container .row .col-2 .accordion-item{
+    background: white;
+    padding-top:0;
+}
+.container .row .col-2 h2{
+    background:purple;
+    border-bottom: 5px solid white;
+    color:white;
+    font-size:1.2em;
+    margin:0;
+    padding:0 0 0 5%;
+}
+.container .row .col-2 .accordion-item p{
+    padding-bottom:5%;
+    padding-left:5%;
+    padding-right:5%;
+}
+.container .row .col-2 .accordion-item h2 {
+    cursor: pointer;
+}
+.container .row .col-2 .accordion-item div {
+    overflow: hidden;
+    -webkit-transition: 0.5s height;
+    transition: 0.5s height;
+    height: 0;
+}
+/*---------------------------------------
+footer section
+---------------------------------------*/
+footer{
+    background: purple;
+    color: white;
+    position:relative;
+    /*top:-15px;*/
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 5%;
+}
+footer li {
+    display: inline-block;
+    margin:0 5px;
+    padding: 5px;
+}
+footer li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+footer li a:hover{
+    text-decoration: underline;
+}
